@@ -9,6 +9,9 @@ import javax.persistence.PersistenceException;
 import com.revolut.demo.dao.AbstractDao;
 
 /**
+ * 
+ * Implementation class for the methods of the connection whit the database for standart methods
+ * 
  * @author geovanefilho
  * @param <T>
  *
@@ -19,6 +22,9 @@ public class DemoDaoImpl<T> implements AbstractDao<T> {
 		super();
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public T save(T model) {
 		EntityTransaction t = EntityManagerHelper.getEntityManager().getTransaction();
 		
@@ -36,6 +42,9 @@ public class DemoDaoImpl<T> implements AbstractDao<T> {
 		return model;
 	};
 	
+	/**
+	 * {@inheritDoc}
+	 */
 	public T merge(T model) {
 		EntityTransaction t = EntityManagerHelper.getEntityManager().getTransaction();
 		
@@ -53,6 +62,9 @@ public class DemoDaoImpl<T> implements AbstractDao<T> {
 		return model;
 	};
 	
+	/**
+	 * {@inheritDoc}
+	 */
 	public boolean delete(T model) {
 		EntityTransaction t = EntityManagerHelper.getEntityManager().getTransaction();
 		try {
@@ -69,12 +81,17 @@ public class DemoDaoImpl<T> implements AbstractDao<T> {
 		return true;
 	};
 	
+	/**
+	 * {@inheritDoc}
+	 */
 	public T find(Class<T> clazz, Long id) {
 		T obj = (T) EntityManagerHelper.getEntityManager().find(clazz, id);
 		return obj;
 	}
 
-	@Override
+	/**
+	 * {@inheritDoc}
+	 */
 	public Collection<T> findAll(Class<T> clazz) {
 		List<T> resultList = EntityManagerHelper.getEntityManager().createQuery("Select u from " + clazz.getSimpleName() + " u", clazz).getResultList();
 		return resultList;

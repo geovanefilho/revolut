@@ -14,6 +14,8 @@ import com.revolut.demo.service.impl.UserServiceImpl;
 
 /**
  * Servlet implementation class User
+ * 
+ * Our servlet responsible for find a user by his username
  */
 public class FindUserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

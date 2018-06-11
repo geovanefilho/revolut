@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class User
+ * 
+ * Just an Index Servlet
  */
 public class IndexController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

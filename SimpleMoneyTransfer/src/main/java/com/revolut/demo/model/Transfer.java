@@ -17,6 +17,9 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 /**
+ * 
+ * Responsible class for store the data from the transference between accounts
+ * 
  * @author geovanefilho
  *
  */

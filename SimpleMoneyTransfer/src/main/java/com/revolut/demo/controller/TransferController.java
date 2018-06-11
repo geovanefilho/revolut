@@ -19,6 +19,8 @@ import com.revolut.demo.service.impl.TransferServiceImpl;
 
 /**
  * Servlet implementation class User
+ * 
+ * Servlet responsible for realise the transfer between accounts.
  */
 public class TransferController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

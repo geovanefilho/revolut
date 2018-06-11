@@ -12,6 +12,9 @@ import com.revolut.demo.model.Account;
 import com.revolut.demo.service.AccountService;
 
 /**
+ * 
+ * Implementation service for the methods of account
+ * 
  * @author geovanefilho
  *
  */
@@ -58,6 +61,13 @@ public class AccountServiceImpl extends DemoServiceImpl<Account> implements Acco
 		this.accountDao.merge(account);
 	}
 	
+	/**
+	 * Validate the information necessary to do operations in accounts
+	 * 
+	 * @param account
+	 * @param amount
+	 * @throws Exception
+	 */
 	private void validate(Account account, BigDecimal amount) throws Exception {
 		if (account == null || account.getId() == null) {
 			throw new Exception("You have to select a valid account!");
@@ -68,6 +78,9 @@ public class AccountServiceImpl extends DemoServiceImpl<Account> implements Acco
 		}
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Account findByNumber(String number) {
 		return this.accountDao.findByNumer(number);

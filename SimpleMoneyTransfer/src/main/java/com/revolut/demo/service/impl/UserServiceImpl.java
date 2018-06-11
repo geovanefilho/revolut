@@ -12,6 +12,9 @@ import com.revolut.demo.model.User;
 import com.revolut.demo.service.UserService;
 
 /**
+ * 
+ * Class responsible for implement the methods of an user
+ * 
  * @author geovanefilho
  *
  */
@@ -29,6 +32,9 @@ public class UserServiceImpl extends DemoServiceImpl<User> implements UserServic
 		}
 	}
 	
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public User save(User user) throws Exception {
 		validate(user);
@@ -46,11 +52,20 @@ public class UserServiceImpl extends DemoServiceImpl<User> implements UserServic
 		return super.save(user);
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public User findByUserName(String username) {
 		return this.userDao.findByUserName(username);
 	}
 	
+	/**
+	 * Validate an user model
+	 * 
+	 * @param user
+	 * @throws Exception
+	 */
 	private void validate(User user) throws Exception {
 		String reqFields = "";
 		if (user.getName() == null || user.getUsername() == null) {

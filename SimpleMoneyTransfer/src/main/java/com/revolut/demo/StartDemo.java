@@ -19,6 +19,9 @@ import io.undertow.servlet.api.DeploymentInfo;
 import io.undertow.servlet.api.DeploymentManager;
 
 /**
+ * 
+ * The main class who starts our container with our project
+ * 
  * @author geovanefilho
  *
  */

@@ -16,6 +16,8 @@ import com.revolut.demo.service.impl.UserServiceImpl;
 
 /**
  * Servlet implementation class User
+ * 
+ * Servlet responsible for create users.
  */
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

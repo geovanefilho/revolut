@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * 
+ * Enum whit some Currencies
+ * 
  * @author geovanefilho
  *
  */

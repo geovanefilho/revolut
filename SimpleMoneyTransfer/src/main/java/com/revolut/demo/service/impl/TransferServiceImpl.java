@@ -14,6 +14,9 @@ import com.revolut.demo.service.ExchangeRateService;
 import com.revolut.demo.service.TransferService;
 
 /**
+ * 
+ * Class responsible for implement the methods of a transference
+ * 
  * @author geovanefilho
  *
  */
@@ -66,6 +69,12 @@ public class TransferServiceImpl extends DemoServiceImpl<Transfer> implements Tr
 		return transfer;
 	}
 	
+	/**
+	 * Do the validation of a transfer
+	 * 
+	 * @param transfer
+	 * @throws Exception
+	 */
 	private void validate(Transfer transfer) throws Exception {
 		if (transfer.getOriginAccount() == null || transfer.getDestinationAccount() == null) {
 			throw new Exception("Origin and Destiny accounts are required fields!");

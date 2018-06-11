@@ -16,6 +16,8 @@ import com.revolut.demo.service.impl.AccountServiceImpl;
 
 /**
  * Servlet implementation class User
+ * 
+ * Our servlet responsible for do credits in an account
  */
 public class AccountController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
