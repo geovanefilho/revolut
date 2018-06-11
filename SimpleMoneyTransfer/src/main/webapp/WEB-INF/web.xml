@@ -5,23 +5,23 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>HelloWorld</servlet-name>
-  	<display-name>HelloWorld</display-name>
-  	<description>Hello World</description>
-  	<servlet-class>com.revolut.demo.controller.HelloWorld</servlet-class>
+  	<servlet-name>Index</servlet-name>
+  	<display-name>Index</display-name>
+  	<description></description>
+  	<jsp-file>/index.jsp</jsp-file>
   </servlet>
   <servlet>
   	<servlet-name>User</servlet-name>
   	<display-name>User</display-name>
   	<description></description>
-  	<servlet-class>com.revolut.demo.controller.User</servlet-class>
+  	<servlet-class>com.revolut.demo.controller.UserController</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>HelloWorld</servlet-name>
-  	<url-pattern>/HelloWorld</url-pattern>
+  	<servlet-name>Index</servlet-name>
+  	<url-pattern>/SimpleMoneyTransfer/Index</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>User</servlet-name>
-  	<url-pattern>/User</url-pattern>
+  	<url-pattern>/SimpleMoneyTransfer/User</url-pattern>
   </servlet-mapping>
 </web-app>
