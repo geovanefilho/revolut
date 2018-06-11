@@ -25,6 +25,7 @@ Actions in the browser to do tests
 To create users and his account use the url like these:
 
 ```http://localhost:8080/SimpleMoneyTransfer/User?userName=Geovane&email=geovanefilho.es@gmail.com&accNumber=155&accCurrency=BRL&accBalance=21000```
+
 ```http://localhost:8080/SimpleMoneyTransfer/User?userName=JhonDoe&email=jhondoe@gmail.com&accNumber=156&accCurrency=EUR&accBalance=1000```
 
 You can change the values of the userName, email, accNumber, accCurrency and accBalance
